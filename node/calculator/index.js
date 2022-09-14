@@ -1,35 +1,46 @@
 let arguments=process.argv.slice(2);
+let crypto=require("crypto");
+let operation=""
+let a;
+let b;
+
+if(arguments[0]==="random"){
+    a=crypto.randomInt((+arguments[2]));
+    b=crypto.randomInt((+arguments[2]));
+    operation=arguments[1]
+}else{
+    operation=arguments[0]
+    a=arguments[1];
+    b=arguments[2];
+}
+
 
 
 const { add, sub, mult, divide,sin, cos, tan, test }=require("./functions.js")
 
-switch (arguments[0]) {
+switch (operation) {
     case "add":
-            console.log(add(arguments[1],arguments[2]))
+            console.log(add(a,b))
             break;
     case "sub":
-            console.log(sub(arguments[1],arguments[2]));
+            console.log(sub(a,b));
             break;
     case "mult":
-            console.log(mult(arguments[1],arguments[2]));
+            console.log(mult(a,b));
             break;
     case "divide":
-            console.log(divide(arguments[1],arguments[2]));
+            console.log(divide(a,b));
             break;
     case "sin":
-            console.log(sin(arguments[1],arguments[2]));
+            console.log(sin(a));
             break;
     case "cos":
-            console.log(cos(arguments[1],arguments[2]));
+            console.log(cos(a));
             break;
     case "tan":
-            console.log(tan(arguments[1],arguments[2]));
+            console.log(tan(a));
             break;
     default:
         console.log("please pass arguments")
 }
-
-// if(arguments[0]==="add"){
-//     console.log(add(arguments[1], arguments[2]))
-// }
 
