@@ -1,8 +1,16 @@
 {
-    "products":
-    [
-        {"name":"rice", "rate":20, "category":"food", "id":1}, 
-        {"name":"rice", "rate":20, "category":"food", "id":2},
-        {"name":"rice", "rate":20, "category":"food", "id":3}
-    ]
+  "products": [
+    {
+      "rice": 25,
+      "rate": 500,
+      "category": "food",
+      "id": 3
+    },
+    {
+      "rice": 25,
+      "rate": 500,
+      "category": "food",
+      "id": 6
+    }
+  ]
 }
