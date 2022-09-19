@@ -40,7 +40,16 @@ class TodoList{
         let info=JSON.parse(this.data);
         let filteredData=info.todos.filter(ele=>ele.id!=id)
         this.saveData({todos:filteredData});
-        return "deleted";
+        return "Deleted";
+    }
+    /*Edit Todo*/
+    editTodo(data){
+        const {id}=data;
+        let info=JSON.parse(this.data);
+        let filteredData=info.todos.filter(ele=>ele.id!=id);
+        filteredData.push(data)
+        this.saveData({todos:filteredData});
+        return "Updated";
     }
 
 }

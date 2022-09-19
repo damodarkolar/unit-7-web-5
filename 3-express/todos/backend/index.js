@@ -33,15 +33,18 @@ app.delete("/todo/:id",(req, res)=>{
 /*Update Todos*/
 app.get("/todo/:id", (req,res)=>{
     let id=req.params.id
-    console.log(id)
     let todo=todoList.getTodo(id);
-    res.send(JSON.stringify(todo))
+    res.send(JSON.stringify(todo));
 })
 
 /*Get individual Todos*/
-app.patch("/todos?:id", (req, res)=>{
-    let id=req.id;
-
+app.patch("/todo", (req, res)=>{
+    // let id=req.id;
+    // let data=req.body;
+    // console.log(data)
+    // let message=todoList.editTodo(data);
+    // res.send(JSON.stringify(message));
+    console.log(req.body)
 })
 
 
