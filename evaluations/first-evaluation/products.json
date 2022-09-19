@@ -1,53 +1,64 @@
 {
-  "products": [{
-    "id": 1,
-    "name": "Viva",
-    "price": 82,
-    "category": "Epoxy Flooring"
-  }, {
-    "id": 2,
-    "name": "Sub-Ex",
-    "price": 83,
-    "category": "Electrical"
-  }, {
-    "id": 3,
-    "name": "Voyatouch",
-    "price": 24,
-    "category": "Casework"
-  }, {
-    "id": 4,
-    "name": "Keylex",
-    "price": 88,
-    "category": "Structural & Misc Steel Erection"
-  }, {
-    "id": 5,
-    "name": "Fintone",
-    "price": 11,
-    "category": "HVAC"
-  }, {
-    "id": 6,
-    "name": "Overhold",
-    "price": 47,
-    "category": "Construction Clean and Final Clean"
-  }, {
-    "id": 7,
-    "name": "Flowdesk",
-    "price": 6,
-    "category": "Fire Protection"
-  }, {
-    "id": 8,
-    "name": "Solarbreeze",
-    "price": 73,
-    "category": "Granite Surfaces"
-  }, {
-    "id": 9,
-    "name": "Prodder",
-    "price": 44,
-    "category": "Doors, Frames & Hardware"
-  }, {
-    "id": 10,
-    "name": "Duobam",
-    "price": 11,
-    "category": "Overhead Doors"
-  }]  
+  "products": [
+    {
+      "id": 1,
+      "name": "Viva",
+      "price": 82,
+      "category": "Epoxy Flooring"
+    },
+    {
+      "id": 2,
+      "name": "Sub-Ex",
+      "price": 83,
+      "category": "Electrical"
+    },
+    {
+      "id": 3,
+      "name": "Voyatouch",
+      "price": 24,
+      "category": "Casework"
+    },
+    {
+      "id": 4,
+      "name": "Keylex",
+      "price": 88,
+      "category": "Structural & Misc Steel Erection"
+    },
+    {
+      "id": 5,
+      "name": "Fintone",
+      "price": 11,
+      "category": "HVAC"
+    },
+    {
+      "id": 6,
+      "name": "Overhold",
+      "price": 47,
+      "category": "Construction Clean and Final Clean"
+    },
+    {
+      "id": 7,
+      "name": "Flowdesk",
+      "price": 6,
+      "category": "Fire Protection"
+    },
+    {
+      "id": 8,
+      "name": "Solarbreeze",
+      "price": 73,
+      "category": "Granite Surfaces"
+    },
+    {
+      "id": 9,
+      "name": "Prodder",
+      "price": 44,
+      "category": "Doors, Frames & Hardware"
+    },
+    {
+      "id": 10,
+      "name": "Viva",
+      "price": 82,
+      "category": "Epoxy Flooring"
+    }
+  ]
 }
