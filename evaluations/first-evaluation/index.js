@@ -1,5 +1,6 @@
 const express=require("express");
 const fs=require("fs");
+const dns=require("dns")
 const PORT=8080;
 const ProductsOperations=require("./productsOperations.js")
 let productsFunctions=new ProductsOperations()
@@ -10,7 +11,17 @@ app.use(express.json());
 
 /*To get website IP*/
 app.get("/getmeip",(req, res)=>{
-res.send("ip")
+    let {website_name}=req.body;
+    let ip=null
+    dns.resolve4(website_name, (err, address)=>{
+        if(err){
+            throw err
+        }else{
+            ip=address[0]
+            res.send(JSON.stringify(`Ip address for given website is ${ip}`))
+        }
+    })
+
 });
 
 
