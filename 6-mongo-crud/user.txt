@@ -8,10 +8,10 @@ Find all the male users who can speak Hindi and female users who can speak Kanna
 db.users.find({gender:"Male"})
 
 Find all the users who wear the shirt size S
-
+db.users.find({shirt_size:"S"})
 
 Find all the female users who wear the shirt size XL
-
+db.users.find({gender:"Female",shirt_size:"S"})
 
 Find all the English speaking male users and Hindi speaking female users
 
@@ -23,6 +23,7 @@ Find all the female users who can speak Bengali who wear shirt size XL and male 
 
 
 Find all the female users who speak any of the Indian languages (Hindi, Punjabi, Bengali, Gujarati, Tamil, Malayalam)
-
+db.users.find({gender:"Female",language:{$in:["Hindi","Punjabi","Bengali","Gujarati","Tamil","Malayalam"]}})
 
 Men who can speak Korean
+db.users.find({gender:"Male",language:"Korean"})
