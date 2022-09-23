@@ -23,7 +23,7 @@ Women from India who own a Blue car
 db.cars.find({gender:"Female",country:"India",car_color:"Blue"})
 
 Men from Germany who purchased cars in 1998 and Men from Egypt who purchased cars in 1992
-
+db.cars.find({gender:"Male",$and:[{country:"Egypt"},{country:"Germany"}]})
 
 Women who own a Green car and are not from Pakistan
 db.cars.find({gender:"Female",car_color:"Green",country:{$nin:["Pakistan"]}})
