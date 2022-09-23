@@ -1,0 +1,27 @@
+All users whose gender is male
+db.nameOfcollection.find({gender:"Male});
+
+all users whose ID is even
+db.nameOfcollection.find({id:{$mod:[2,0]}})
+
+Users who currently live in Japan
+db.nameOfcollection.find({gender:"Male});
+
+Users who are female and live in India
+db.nameOfcollection.find({gender:"Male});
+
+Users who are more than 25 years old
+db.peoplesData.find({age:{$gt:25}})
+
+Users who are less than 50 years old and live in United State
+db.nameOfcollection.find({age:{$lt:50},native:"United States"});
+
+Total number of users who want to relocate to France (count only)
+db.nameOfcollection.find({relocate_to:"France"}).count();
+
+Total number of users who are from USA and want to relocate to russia, sort them by age in ascending order
+db.nameOfcollection.find({native:"United States", relocate_to:"Russia"}).sort({age:1})
+
+get all users, sort them by total number of family member ASC and age DESC order
+db.nameOfcollection.find().sort({family_members:1});//Ascending
+db.nameOfcollection.find().sort({family_members:-1});//Dessending
